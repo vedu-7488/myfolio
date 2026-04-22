@@ -26,10 +26,16 @@
                 </nav>
 
                 <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-                    <span class="theme-toggle-track">
-                        <span class="theme-toggle-label theme-toggle-label-light">Light</span>
-                        <span class="theme-toggle-thumb"></span>
-                        <span class="theme-toggle-label theme-toggle-label-dark">Dark</span>
+                    <span class="theme-icon theme-icon-sun" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="4.25"></circle>
+                            <path d="M12 2.5v2.5M12 19v2.5M21.5 12H19M5 12H2.5M18.72 5.28l-1.77 1.77M7.05 16.95l-1.77 1.77M18.72 18.72l-1.77-1.77M7.05 7.05 5.28 5.28"></path>
+                        </svg>
+                    </span>
+                    <span class="theme-icon theme-icon-moon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M20.2 14.35A8.5 8.5 0 0 1 9.65 3.8a.55.55 0 0 0-.72-.67A9.5 9.5 0 1 0 20.87 15.07a.55.55 0 0 0-.67-.72Z"></path>
+                        </svg>
                     </span>
                 </button>
             </div>
@@ -175,8 +181,24 @@
                     </div>
 
                     <div class="achievement-panel">
-                        <div class="achievement-preview">
-                            <img src="assets/credly-badges.png" alt="A preview of Ved Prakash Mishra's Credly badges, including Google AI for Brainstorming and Planning, Google Prompting Essentials, Python for Data Science and AI, and Python for Data Science.">
+                        <div class="achievement-stage">
+                            <div class="achievement-preview">
+                                <img
+                                    src="assets/credly-badges.png"
+                                    alt="A preview of Ved Prakash Mishra's Credly badges, including Google AI for Brainstorming and Planning, Google Prompting Essentials, Python for Data Science and AI, and Python for Data Science."
+                                    data-parallax="18"
+                                >
+                            </div>
+
+                            <div class="achievement-float achievement-float-top" data-parallax="-10">
+                                <span class="achievement-float-label">Showcased</span>
+                                <strong>4 verified badges</strong>
+                            </div>
+
+                            <div class="achievement-float achievement-float-bottom" data-parallax="12">
+                                <span class="achievement-float-label">Learning arc</span>
+                                <strong>2020 to 2026</strong>
+                            </div>
                         </div>
 
                         <div class="achievement-panel-content">
@@ -184,6 +206,16 @@
                             <p class="achievement-panel-copy">
                                 Browse my public badge collection for the latest achievements and issued credentials.
                             </p>
+                            <div class="achievement-metrics">
+                                <div class="achievement-metric">
+                                    <span>Focus</span>
+                                    <strong>AI, prompts, Python</strong>
+                                </div>
+                                <div class="achievement-metric">
+                                    <span>Format</span>
+                                    <strong>Public credential badges</strong>
+                                </div>
+                            </div>
                             <a class="button button-primary" href="https://www.credly.com/users/ved-prakash-mishra.8ecaeff8/badges" target="_blank" rel="noreferrer">
                                 View Credly Badges
                             </a>
